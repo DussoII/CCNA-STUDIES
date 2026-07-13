@@ -136,19 +136,7 @@ S       192.168.1.192/27 [1/0] via 192.168.1.233
 S       192.168.1.224/29 [1/0] via 192.168.1.233
 C       192.168.1.232/30 is directly connected, GigabitEthernet0/0
 L       192.168.1.234/32 is directly connected, GigabitEthernet0/0
-
-R1#sh ip inter brie
-Interface              IP-Address      OK? Method Status                Protocol 
-GigabitEthernet0/0     192.168.1.234   YES manual up                    up 
-GigabitEthernet0/1     192.168.1.1     YES manual up                    up 
-GigabitEthernet0/2     192.168.1.129   YES manual up                    up 
-Vlan1                  unassigned      YES unset  administratively down down
-R1#ping 192.168.1.194
-
-Type escape sequence to abort.
-Sending 5, 100-byte ICMP Echos to 192.168.1.194, timeout is 2 seconds:
-.!!!!
-Success rate is 80 percent (4/5), round-trip min/avg/max = 0/0/0 ms>
+>
 ```
 
 ## R2 Routing Table
@@ -175,18 +163,7 @@ L       192.168.1.225/32 is directly connected, GigabitEthernet0/2
 C       192.168.1.232/30 is directly connected, GigabitEthernet0/0
 L       192.168.1.233/32 is directly connected, GigabitEthernet0/0
 
-R2#sh ip int brief
-Interface              IP-Address      OK? Method Status                Protocol 
-GigabitEthernet0/0     192.168.1.233   YES manual up                    up 
-GigabitEthernet0/1     192.168.1.193   YES manual up                    up 
-GigabitEthernet0/2     192.168.1.225   YES manual up                    up 
-Vlan1                  unassigned      YES unset  administratively down down
-R2#ping 192.168.1.130
-
-Type escape sequence to abort.
-Sending 5, 100-byte ICMP Echos to 192.168.1.130, timeout is 2 seconds:
-.!!!!
-Success rate is 80 percent (4/5), round-trip min/avg/max = 0/0/0 ms>
+>
 ```
 
 ---
